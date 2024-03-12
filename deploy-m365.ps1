@@ -38,7 +38,7 @@ $main = {
         }
         $channel = ($InstalledChannel | select @{n= 'Channel';e = {$channel_lookup.item($_.AudienceId)}}).Channel
     }else{
-        #Default to Semi-Annual Channel
+        #Default to MonthlyEnterprise Channel
         $channel = 'MonthlyEnterprise'
     }
        
